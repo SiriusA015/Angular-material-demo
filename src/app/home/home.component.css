@@ -1,0 +1,116 @@
+.back {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  margin-left: 100px;
+  align-items: center;
+}
+.back img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.back p {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(109, 110, 113);
+}
+.container {
+  margin: 82px auto 32px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  box-shadow: 0em 1em 0.4em rgb(228, 228, 219);
+  padding-bottom: 50px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(54, 45, 126);
+}
+.header .header-commant {
+  font-style: italic;
+}
+.header .header-commant a {
+  font-weight: bold;
+  color: rgb(54, 45, 126);
+}
+.policy-detail {
+  margin-top: 50px;
+}
+.detail-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(54, 45, 126);
+}
+.detail-name {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+}
+.detail-name h4 {
+  font-size: 14px;
+  color: rgb(54, 45, 126);
+}
+.upload-policy {
+  margin-top: 50px;
+}
+.form-flex {
+  display: flex;
+}
+.font-italic {
+  font-style: italic;
+}
+.color-text {
+  color: rgb(54, 45, 126);
+}
+.upload-grid {
+  display: grid;
+  grid-template-columns: 35% 35%;
+  gap: 100px;
+}
+.color-semitext {
+  color: rgb(109, 110, 113);
+}
+.policy-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+.example-full-width {
+  width: 30%;
+}
+.contact {
+  margin-top: 70px;
+}
+.contact h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(54, 45, 126);
+}
+.contact p {
+  color: rgb(109, 110, 113);
+  font-style: italic;
+}
+.contact .contact-form {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  margin-top: 70px;
+  padding-bottom: 80px;
+}
+.footer button {
+  float: right;
+  width: 180px;
+  font-style: bold;
+  background-color: rgb(226, 107, 45);
+}

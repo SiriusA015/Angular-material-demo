@@ -1,0 +1,178 @@
+<div class="back">
+  <img alt="back" src="./assets/back.png" />
+  <p class="test">Back to Dashboard</p>
+</div>
+<div class="container">
+  <div class="header">
+    <div class="header-title">Insurance Submission</div>
+    <div class="header-commant">
+      Please contact the <a href="/">Helpdesk</a> for further assistance
+    </div>
+  </div>
+  <div class="policy-detail">
+    <div class="detail-title">Insurance Policy details</div>
+    <div class="detail-name">
+      <div>
+        <h4>Name of Insurance Company</h4>
+        <mat-form-field appearance="fill" style="width: 100%; max-width: 100%">
+          <mat-label>Others</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let name of names" [value]="name.value">
+              {{ name.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div>
+        <h4>Please Mention Other Company Name</h4>
+        <mat-form-field appearance="fill" style="width: 100%; max-width: 100%">
+          <mat-label>ABC Insurance Co </mat-label>
+          <mat-select>
+            <mat-option *ngFor="let name of names" [value]="name.value">
+              {{ name.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="upload-title"></div>
+    <div class="upload-guideline"></div>
+    <div class="policy-form"></div>
+    <div class="person-detail"></div>
+  </div>
+  <div class="upload-policy">
+    <h1 class="color-text">Upload Insurance Policy</h1>
+    <div class="upload-grid">
+      <div>
+        <h2 class="color-text">Upload Guidelines</h2>
+        <p class="font-italic color-semitext">
+          Before uploading the files, please ensure the following
+        </p>
+        <div style="display: flex; gap: 15px">
+          <img
+            alt="icon1"
+            src="./assets/A-sign.png"
+            width="30px"
+            height="30px"
+          />
+          <div class="font-italic color-semitext">{{ uploadText }}</div>
+        </div>
+        <div style="display: flex; margin-top: 10px; gap: 10px">
+          <img
+            alt="icon1"
+            src="./assets/new_page.png"
+            width="30px"
+            height="30px"
+          />
+          <div>
+            <span class="font-italic color-semitext">Document</span><br />
+            <span class="font-italic color-semitext"
+              >1. Acceptable format : PDF</span
+            ><br />
+            <span class="font-italic color-semitext"
+              >2. Max file size limit : 2 MB</span
+            ><br />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="display: flex; gap: 50px; align-items: center">
+          <h2 class="color-text">Insurance Policy</h2>
+          <div>
+            <img width="30px" height="30px" alt="eye" src="./assets/eye.png" />
+          </div>
+          <div>
+            <img
+              width="30px"
+              height="30px"
+              alt="upload"
+              src="./assets/upload.png"
+            />
+          </div>
+        </div>
+        <p class="font-italic color-semitext">1234_Insurance Policy_31022020</p>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top: 70px">
+    <div class="policy-form">
+      <div class="example-full-width">
+        <h5 class="color-text" style="margin-bottom: 0; padding-bottom: 0">
+          Policy number
+        </h5>
+        <mat-form-field>
+          <input matInput value="POL/123456/ABCD/123" />
+        </mat-form-field>
+      </div>
+      <div class="example-full-width">
+        <h5 class="color-text" style="margin-bottom: 0; padding-bottom: 0">
+          Policy Valid From
+        </h5>
+        <mat-form-field>
+          <input type="date" matInput value="01/06/2020" />
+        </mat-form-field>
+      </div>
+      <div class="example-full-width">
+        <h5 class="color-text" style="margin-bottom: 0; padding-bottom: 0">
+          Policy Valid to
+        </h5>
+        <mat-form-field>
+          <input type="date" matInput value="31/05/2021" />
+        </mat-form-field>
+      </div>
+      <div class="example-full-width">
+        <h5 class="color-text" style="margin-bottom: 0; padding-bottom: 0">
+          Policy Renewal Receipt Date
+        </h5>
+        <mat-form-field>
+          <input placeholder="Enter Receipt Number" matInput />
+        </mat-form-field>
+      </div>
+      <div class="example-full-width">
+        <h5 class="color-text" style="margin-bottom: 0; padding-bottom: 0">
+          Policy number
+        </h5>
+        <mat-form-field>
+          <input
+            type="date"
+            placeholder="Select Policy Renewal Date"
+            matInput
+          />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div class="contact">
+    <h1>Contact Person Details</h1>
+    <p>Provide Details of the person who is responsible for this Application</p>
+    <div class="contact-form">
+      <div class="example-full-width">
+        <h5 class="color-text" style="margin-bottom: 0; padding-bottom: 0">
+          Name
+        </h5>
+        <mat-form-field>
+          <input matInput value="Arun Sharma" />
+        </mat-form-field>
+      </div>
+      <div class="example-full-width">
+        <h5 class="color-text" style="margin-bottom: 0; padding-bottom: 0">
+          Mobile no.
+        </h5>
+        <mat-form-field>
+          <input matInput value="9999000099" />
+        </mat-form-field>
+      </div>
+      <div class="example-full-width">
+        <h5 class="color-text" style="margin-bottom: 0; padding-bottom: 0">
+          Email ID
+        </h5>
+        <mat-form-field>
+          <input type="email" matInput value="compofficer@domain.com" />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <button mat-raised-button color="warn">PROCEED</button>
+</div>
