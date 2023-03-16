@@ -15,18 +15,33 @@
   font-weight: 700;
   color: rgb(109, 110, 113);
 }
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .container {
   margin: 82px auto 32px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1100px;
   box-shadow: 0em 1em 0.4em rgb(228, 228, 219);
-  padding-bottom: 50px;
+  padding: 30px 200px;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .header .header-title {
   font-size: 28px;
   font-weight: bold;
@@ -47,11 +62,13 @@
   font-weight: bold;
   color: rgb(54, 45, 126);
 }
-.detail-name {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 100px;
+@media screen and (min-width: 768px) {
+  .detail-name {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px;
+  }
 }
 .detail-name h4 {
   font-size: 14px;
@@ -69,21 +86,29 @@
 .color-text {
   color: rgb(54, 45, 126);
 }
-.upload-grid {
-  display: grid;
-  grid-template-columns: 35% 35%;
-  gap: 100px;
+@media screen and (min-width: 768px) {
+  .upload-grid {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    gap: 100px;
+  }
 }
 .color-semitext {
   color: rgb(109, 110, 113);
 }
-.policy-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0px;
+@media screen and (min-width: 768px) {
+  .policy-form {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    gap: 70px;
+  }
 }
-.example-full-width {
-  width: 30%;
+@media screen and (min-width: 1024px) {
+  .policy-form {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 70px;
+  }
 }
 .contact {
   margin-top: 70px;
@@ -97,9 +122,12 @@
   color: rgb(109, 110, 113);
   font-style: italic;
 }
-.contact .contact-form {
-  display: grid;
-  grid-template-columns: auto auto auto;
+@media screen and (min-width: 1024px) {
+  .contact .contact-form {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+  }
 }
 .footer {
   margin-left: auto;
@@ -111,6 +139,6 @@
 .footer button {
   float: right;
   width: 180px;
-  font-style: bold;
+  font-weight: bold;
   background-color: rgb(226, 107, 45);
 }
